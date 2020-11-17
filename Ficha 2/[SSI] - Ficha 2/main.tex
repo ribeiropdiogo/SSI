@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+
+\input{setup/packages.tex}
+
+\begin{document}
+
+
+\thispagestyle{empty}
+\setlength\headheight{0pt} 
+\begin{center}
+
+\begin{center}
+\includegraphics[width=0.45\linewidth]{img/um_logo.jpg}            
+\end{center}	
+
+        \vspace{0.25cm}
+        {\scshape\LARGE Universidade do Minho \par}
+        \vspace{0.25cm}
+        {\scshape\Large Mestrado integrado em Engenharia Informática\par}
+        \vspace{0.5cm}
+
+        {\Large\bfseries Ficha 2\par}
+        
+        \vspace{0.5cm}
+        {\Large\itshape Diogo Pinto Ribeiro, A84442\par}
+        {\Large\itshape Luís Pedro Barbosa Ferreira, A86265\par}
+        \vspace{0.25cm}
+
+\vspace{1cm}
+%Supervised by\par
+Segurança de Sistemas Informáticos \\
+4th Year, 1st Semester \\
+Departmento de Informática\par
+\vspace{1.5cm}
+\large
+\today
+
+\end{center}
+
+\clearpage
+\restoregeometry
+\justify
+
+\pagenumbering{gobble}
+%\input{sections/declaration}
+%\input{sections/acknowledgements}
+%\input{sections/abstract}
+
+%List of figures and tables, automatic from thesis.
+\pagenumbering{roman}
+%Change ToC title
+\renewcommand{\contentsname}{Contents}
+\tableofcontents
+\pagebreak
+
+%\listoffigures
+%\pagebreak
+ 
+%\listoftables
+%\pagebreak
+
+
+
+
+\pagenumbering{arabic}
+\input{sections/introduction}
+\input{sections/modelling}
+\input{sections/conclusions}
+
+%prints bibliography from bibliography file.
+\printbibliography
+
+\end{document}
