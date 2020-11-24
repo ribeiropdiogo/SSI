@@ -1,0 +1,76 @@
+\subsubsection{CVE}
+
+%With the provided versions of the components used, we searched for Common Vulnerabilities and Exposures and selected those affecting our versions, so when implementing the system we could have a special supervision about the already know vulnerabilities. We opted to only provide the CVSS score, a simple description of the CVE taken from NVD and MITRE and specify the fix (if possible) to keep it as simple as possible while listing as many vulnerabilities as possible:
+
+%With the provided versions of the components used, we searched for Common Vulnerabilities and Exposures and selected those affecting our versions. We opted to only provide the CVSS score, a simple description of the CVE taken from NVD and MITRE and specify the fix (if possible) to keep it as simple as possible while listing as many vulnerabilities as possible:
+
+\textbf{PostgreSQL 12.1 \& PostgreSQL 12.4}
+
+\textbf{CVE-2020-25695} - An attacker having permission to create non-temporary objects in at least one schema can execute arbitrary SQL functions under the identity of a superuser. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\cite{postgres1} \textbf{Updating to versions 12.5 or 13.1} fixes this issue. \textbf{This CVE has not CVSS score yet.}
+
+\textbf{CVE-2020-25694} -  If a client application that creates additional database connections only reuses the basic connection parameters while dropping security-relevant parameters, an opportunity for a man-in-the-middle attack, or the ability to observe clear-text transmissions, could exist. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\cite{postgres2} \textbf{Updating to versions 12.5 or 13.1} fixes this issue. \textbf{This CVE has not CVSS score yet.}
+
+\textbf{CVE-2020-25694} -  An authenticated attacker could use this flaw in an attack in order to execute arbitrary SQL command in the context of the user used for replication.\cite{postgres3} \textbf{Updating to version 12.4} fixes this issue. \textbf{This CVE has a CVSS score of 7.1, being classified as High.} This means that it is highly advised to fix it.
+
+\textbf{Docker 19.03.6}
+
+\textbf{CVE-2020-13401} - An attacker in a container, with the CAP\_NET\_RAW capability, can craft IPv6 router advertisements, and consequently spoof external IPv6 hosts, obtain sensitive information, or cause a denial of service.\cite{docker1} \textbf{Updating to version 19.03.11} fixes this issue. \textbf{This CVE has a CVSS score of 6.0, being classified as Medium.} This means that it is advised to fix it, but not crucial.
+
+
+
+\textbf{Django v3.0}
+
+\begin{comment}
+\textbf{CVE-2020-24584}
+
+\textbf{CVE-2020-24583}
+
+\textbf{CVE-2019-19844}
+
+\textbf{CVE-2020-13254}
+
+\textbf{CVE-2020-13596}
+
+\textbf{CVE-2020-7471}
+\end{comment}
+
+
+\textbf{CVE-2020-9402} - This allows SQL Injection if untrusted data is used as a tolerance parameter in GIS functions and aggregates on Oracle.\cite{docker1} \textbf{Updating to version 3.0.4} fixes this issue. \textbf{This CVE has a CVSS score of 8.8, being classified as High.} This means that it is highly advised to fix it.
+
+
+
+@online{postgres1,
+    title     = "CVE-2020-25695",
+    url       = "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25695",
+    urldate = {2020-11-14}
+}
+@online{postgres2,
+    title     = "CVE-2020-25694",
+    url       = "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25694",
+    urldate = {2020-11-14}
+}
+@online{postgres3,
+    title     = "CVE-2020-14349",
+    url       = "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14349",
+    urldate = {2020-11-14}
+}
+@online{docker1,
+    title     = "CVE-2020-13401",
+    url       = "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13401",
+    urldate = {2020-11-14}
+}
+@online{django1,
+    title     = "CVE-2020-9402",
+    url       = "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9402",
+    urldate = {2020-11-14}
+}
+
+\begin{comment}
+
+\textbf{CVE-2020-24583}
+
+\textbf{CVE-2019-19844}
+
+\textbf{CVE-2020-13596}
+
+\end{comment}
